@@ -41,11 +41,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  var times = (a * b);
+  var secondString = 'The product of ' + a + ' and ' + b + ' is ' + times + '.';
+  return [times,secondString];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+// eslint-disable-next-line no-undef
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -58,11 +62,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(x, y, z) {
-  var firstSum = 
+// eslint-disable-next-line no-unused-vars
+function sumAndMultiply() {
 }
-  
-  
 
   //eslint-disable-line
 
