@@ -123,11 +123,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  var multiString = 'The numbers ';
+  var results = 1;
+  for(var index = 0; index < multArr.length; index++) {
+    results = multiply(results, multArr[index])[0];
+    if (index === 0) {
+      multiString = multiString + multArr[index];
+    } else {
+      multiString = multiString + ',' + multArr[index];
+    }
+  }
 
+  multiString = multiString + ' have a product of ' + results + '.';
+
+  return [results,multiString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+// eslint-disable-next-line no-undef
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
